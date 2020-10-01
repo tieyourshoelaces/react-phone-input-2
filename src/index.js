@@ -964,7 +964,7 @@ class PhoneInput extends React.Component {
           ref={el => this.dropdownContainerRef = el}
         >
           {renderStringAsFlag ?
-          <div className={selectedFlagClasses}>{renderStringAsFlag}</div>
+          <div className={selectedFlagClasses}><Text>{selectedCountry.name}</Text>{renderStringAsFlag}</div>
           :
           <div
             onClick={disableDropdown ? undefined : this.handleFlagDropdownClick}
